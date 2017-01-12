@@ -15,7 +15,7 @@ func Example() {
 		w.Close()
 	}()
 
-	err := Run(r, func(p []byte) error {
+	err := Read(r, func(p []byte) error {
 		fmt.Println(string(p))
 		return nil
 	})

@@ -5,8 +5,8 @@ import (
 	"io"
 )
 
-// Run io stream processor from reader
-func Run(r io.Reader, fn func([]byte) error) error {
+// Read io stream processor from reader
+func Read(r io.Reader, fn func([]byte) error) error {
 
 	in := bufio.NewReader(r)
 
